@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-project(Hypercube4DViewer LANGUAGES CXX)
+project(Hypercube4DViewer LANGUAGES C CXX)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -29,7 +29,7 @@ file(GLOB_RECURSE SRC_FILES CONFIGURE_DEPENDS
 )
 
 # WIN32 tells MSVC/Linker to build a GUI app (no console window)
-add_executable(Hypercube4DViewer WIN32 ${SRC_FILES})
+add_executable(Hypercube4DViewer ${SRC_FILES})
 
 # Include directory for your headers
 target_include_directories(Hypercube4DViewer

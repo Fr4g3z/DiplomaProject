@@ -1,10 +1,19 @@
 # ---- CMake build trees ----
 ForProgrammer/build/
-ForProgrammer/**/CMakeFiles/
-ForProgrammer/**/CMakeCache.txt
-ForProgrammer/**/cmake_install.cmake
-ForProgrammer/**/Makefile
-ForProgrammer/**/*.vcxproj.user
+ForProgrammer/build_x64/
+ForProgrammer/out/
+**/CMakeFiles/
+**/CMakeCache.txt
+**/cmake_install.cmake
+**/Makefile
+**/*.vcxproj
+**/*.vcxproj.filters
+**/*.vcxproj.user
+**/*.sln
+**/*.dir/
+**/build.ninja
+**/.ninja_deps
+**/.ninja_log
 
 # ---- Visual Studio cache / user files ----
 .vs/
@@ -13,6 +22,7 @@ ForProgrammer/**/*.vcxproj.user
 *.userosscache
 *.VC.db
 *.VC.opendb
+VSInheritEnvironments.txt
 
 # ---- Compiled binaries and intermediate files ----
 [Dd]ebug/
@@ -21,11 +31,17 @@ ForProgrammer/**/*.vcxproj.user
 [xX]86/
 [Bb]in/
 [Oo]bj/
+*.exe
+*.lib
+*.dll
 *.pdb
 *.ilk
+*.exp
 *.log
+*.obj
 
 # ---- OS / editor junk ----
 Thumbs.db
 Desktop.ini
 .DS_Store
+.vscode/
